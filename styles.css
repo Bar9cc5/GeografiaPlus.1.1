@@ -1,0 +1,229 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.336);
+    backdrop-filter: blur(9px);
+}
+
+.logo h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.logo h1 span {
+    color: rgb(255, 255, 255);
+    background-color: rgb(108, 184, 255);
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.line {
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+}
+
+.navigation ul li {
+    margin: 0 10px;
+}
+
+.navigation ul li a {
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    color: rgb(108, 184, 255);
+}
+
+.banner {
+    background: url(baner.png);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner-content {
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.text-image-container {
+    display: flex; /* Используем flexbox для размещения текста и изображения */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.text-content {
+    margin-right: 20px; /* Отступ между текстом и изображением */
+}
+
+.banner h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.banner h1 span {
+    color: rgb(255, 255, 255);
+    background-color: rgb(108, 184, 255);
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    z-index: 2;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(108, 184, 255);
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(108, 184, 255);
+    padding: 2% 5%;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all .05s ease-in-out;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(108, 184, 255);
+}
+
+.banner-image {
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+.tiles-container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tile {
+    flex: 1;
+    background-color: #fcfcfc; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    max-width: 300px;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.more-info {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgb(108, 184, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.more-info:hover {
+    background-color: rgb(0, 114, 221);
+}
+
+.lenta-main h1 {
+    border-radius: 10px;
+    text-align: center;
+    color: #000000; 
+    font-weight: 700; 
+    font-size: 48px; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+.social-menu {
+    position: relative;
+}
+
+.social-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-menu ul li {
+    margin-right: 15px;
+    position: relative;
+}
+
+.social-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.social-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #ffffff;
+    padding: 10px;
+}
+
+.social-menu ul li:hover .submenu {
+    display: block;
+}
+
+.social-menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social-menu .submenu a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0; 
+}
